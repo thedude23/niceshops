@@ -1,0 +1,99 @@
+.btn {
+    &,
+    &:link,
+    &:visited {
+        font-family: 'proxima-nova-bold';
+        height: 47px;
+        line-height: 47px;
+        width: 247px;
+        border-radius: 23px;
+        background-color: $color-primary-4;
+        color: $color-white;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 2.3rem; // 23px
+        position: relative;
+        font-size: 2.3rem;
+        text-align: center;
+        transition: all .2s;
+
+        //Change for the <button> element
+        border: none;
+        cursor: pointer;
+    }
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color-black,.2);
+
+        &::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 1rem rgba($color-black,.2);
+    }
+    
+    &::after {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 10rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all .4s;
+    }
+    
+    &--animated {
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+    }
+}
+
+.btn-text,
+.btn-text-not-bold {
+    &:link,
+    &:visited {
+        font-family: 'proxima-nova-bold';
+        color: $color-primary-2;
+        font-size: 2.3rem;
+        color: $color-primary-1;
+        font-weight: 600;
+        line-height: 1.22; // 22px / 18px => 1.22
+        letter-spacing: 0;
+        display: inline-block;
+        text-decoration: none;
+        border-bottom: 1px solid $color-primary-1;
+        padding: 1px;
+        transition: all .2s;
+
+        @media screen and (max-width: $bp-m) {
+            font-size: 1.8rem; // 18px
+        }
+    }
+
+    &:hover {
+        background-color: $color-primary-1;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+        transform: translateY(0);
+    }
+}
+
+.btn-text-not-bold {
+    font-family: 'proxima-nova-regular' !important;
+    font-weight: 300 !important;
+}

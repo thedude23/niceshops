@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; // 1rem = 10px, 10px/16px = 62.5%
+}
+
+body {
+    font-family: 'proxima-nova-regular', sans-serif;
+    color: $color-black;
+    font-size: 1.8rem; // 18px // default: 1.6rem = 16px
+}
+
+::selection {
+    background-color: $color-tertiary-1;
+    color: $color-tertiary-2;
+}

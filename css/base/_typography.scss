@@ -1,0 +1,52 @@
+.heading-primary {
+    font-family: 'proxima-nova-bold';
+    font-size: 3.2rem; // 32px
+    line-height: 1.22; // 39px = desired line height / 32px (font-size) => 1.22
+    color: $color-primary-1;
+    font-weight: 600;
+    letter-spacing: 0;
+
+    // &--main { }
+    
+    // &--sub { }
+}
+
+.heading-secondary {
+    font-family: 'proxima-nova-bold';
+    color: $color-primary-1;
+    font-size: 2.7rem; // 27px
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 1.22; // 33px / 27px => 1.22
+}
+
+.heading-tertiary {
+    font-family: 'proxima-nova-bold';
+    font-size: 2.4rem; // 24px
+    line-height: 1.21; // 29px / 24px => 1.21
+    color: $color-primary-1;
+    font-weight: 600;
+    letter-spacing: 0;
+
+    @media screen and (max-width: $bp-m) {
+        font-size: 2.1rem;
+        line-height: 1.38; // 29 / 21 ==> 1.38
+    }
+}
+
+.heading-quaternary {
+    font-family: 'proxima-nova-bold';
+    font-size: 2.1rem; // 21px
+    line-height: 1.19; // 25px / 21px => 1.19
+    color: $color-primary-1;
+    font-weight: 600;
+    letter-spacing: 0;
+}
+
+.paragraph {
+    font-size: 1.8rem; // 18px
+    color: $color-black;
+    line-height: 1.44; // 26px / 18px (1.8rem) => 1.44
+    letter-spacing: 0;
+    // &:not(:last-child) { }
+}

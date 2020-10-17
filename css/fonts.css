@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "coco-gothic-bold";
+  src: url('fonts/FontsFree-Net-Coco-Gothic-Bold-trial.ttf') format('truetype');;
+}
+
+@font-face {
+  font-family: "proxima-nova-bold";
+  src: url('fonts/FontsFree-Net-Proxima-Nova-Sbold.otf') format('opentype');;
+}
+
+@font-face {
+  font-family: "proxima-nova-regular";
+  src: url('fonts/FontsFree-Net-ProximaNova-Regular.ttf') format('truetype');;
+}
